@@ -1,0 +1,2 @@
+FROM llama3.2:1b
+adapter /Users/VaurenW/Github/Active/LoRA/fromrunpod
