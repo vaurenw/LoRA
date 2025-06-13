@@ -1,24 +1,15 @@
-# LoRA Fine-tuning Pipeline for Llama 3.2-1B
+# LoRA Fine-tuning Pipeline for Llama 3.2-1B inspired by @nicknochnack
 
 ## Components
 
 ### datagen.py
 
-**Functionality:**
-- Converts PDF documents to structured text using Docling
-- Chunks documents using hybrid chunking for optimal context
-- Generates question-answer pairs using a large language model
-- Creates contextually enriched training data
-
-**Key Features:**
 - PDF document processing with Docling DocumentConverter
-- Intelligent text chunking and contextualization
 - Automated Q&A pair generation using Qwen2.5-Coder 14B
 - Structured JSON output for training
 
 ### LoRA Training (`train.py`)
 
-**Functionality:**
 - Fine-tunes Llama 3.2-1B using Parameter-Efficient Fine-Tuning (PEFT)
 - Implements 4-bit quantization for memory efficiency
 - Uses chat formatting for instruction-following behavior
@@ -39,7 +30,6 @@
 - BitsAndBytesConfig for 4-bit quantization
 - Gradient checkpointing for reduced memory usage
 - Automatic garbage collection and cache clearing
-
 
 ### Training Parameters
 
