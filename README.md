@@ -8,7 +8,7 @@
 - Automated Q&A pair generation using Qwen2.5-Coder 14B
 - Structured JSON output for training
 
-### LoRA Training (`train.py`)
+### train.py
 
 - Fine-tunes Llama 3.2-1B using Parameter-Efficient Fine-Tuning (PEFT)
 - Implements 4-bit quantization for memory efficiency
